@@ -2,16 +2,16 @@ import type { Experience } from "@/types";
 
 export const experiencesConfig: Experience[] = [
   {
-    title: "Freelance Developer",
-    employmentType: "Freelance",
+    title: "Application Developer",
+    employmentType: "Internship",
     company: {
-      name: "Self-employed",
-      url: "#",
+      name: "Reslink Technologies",
+      url: "https://www.reslink.org/",
     },
     location: {
-      name: "Remote",
+      name: "Hybrid",
     }, 
-    start: "December 2024",
+    start: "June 2025",
     end: "Present",
     description: [
       "Developed custom web applications and e-commerce solutions for multiple clients",
@@ -21,17 +21,17 @@ export const experiencesConfig: Experience[] = [
     ],
   },
   {
-    title: "Software Engineer",
-    employmentType: "Full time",
+    title: "Frontend Developer",
+    employmentType: "Internship",
     company: {
-      name: "RMSI (Client - Apple Inc) ",
-      url: "https://radicalhealth.care",
+      name: "Drizzy GoSafe Technologies",
+      url: "https://drizzy.in/",
     },
     location: {
       name: "Remote",
     },
-    start: "October 2023",
-    end: "December 2024",
+    start: "February 2025",
+    end: "January 2025",
     description: [
       "Engineered API for Apple Maps data translation & validation using Node.js/Express/MySQL",
       "Built data visualization tool with React/AWS for digitization analysis",

@@ -6,6 +6,7 @@ import ThemeToggler from "@/components/theme/theme-toggler";
 import { Rss } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { skillsConfig } from "@/config/skills.config";
+import SkillsSection from "./skills";
 
 export default function Hero() {
   return (
@@ -30,7 +31,7 @@ export default function Hero() {
         {portfolioConfig.tagline} <span className="sr-only">tagline</span>
       </h3>
       <p className="my-6 max-w-2xl text-foreground/80">
-        Hey there 👋 I&apos;m Gurvinder Singh a.k.a Gxuri - I don&apos;t have a niche, I&apos;m a{" "}
+        Hey there 👋 I&apos;m Sehaj Preet - I don&apos;t have a niche, I&apos;m a{" "}
         <a
           href="#"
           className="text-foreground font-semibold hover:underline"
@@ -50,14 +51,7 @@ export default function Hero() {
       </p>
       <Socials />
       <div className="hidden md:flex flex-col text-sm space-y-2 rounded max-w-2xl text-foreground/70 my-7">
-        {skillsConfig.map((skill) => (
-          <p key={skill.category}>
-            <span className="font-semibold text-primary/90">
-              {skill.category}:
-            </span>{" "}
-            {skill.technologies.join(", ")}
-          </p>
-        ))}
+        <SkillsSection />
       </div>
     </section>
   );
