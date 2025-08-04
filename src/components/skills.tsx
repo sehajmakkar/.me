@@ -22,122 +22,159 @@ import {
   Component,
 } from "lucide-react";
 
-const skills = [
-  { name: "React", icon: Code2, color: "text-white" },
-  { name: "Next.js", icon: Globe, color: "text-white" },
-  { name: "TypeScript", icon: FileText, color: "text-white" },
-  { name: "Node.js", icon: Server, color: "text-white" },
-  { name: "MongoDB", icon: Database, color: "text-white" },
-  { name: "JavaScript", icon: Code2, color: "text-white" },
-  { name: "PostMan-API", icon: Zap, color: "text-white" },
-  { name: "GSAP", icon: Workflow, color: "text-white" },
-  { name: "Supabase", icon: Database, color: "text-white" },
-  { name: "Clerk", icon: Shield, color: "text-white" },
-  { name: "React Native", icon: Smartphone, color: "text-white" },
-  { name: "Expo", icon: Smartphone, color: "text-white" },
-  { name: "NeonDB", icon: Database, color: "text-white" },
-  { name: "Bullmq", icon: Settings, color: "text-white" },
-  { name: "Drizzle ORM", icon: Database, color: "text-white" },
-  { name: "Zustand", icon: Box, color: "text-white" },
-  { name: "Docker", icon: Box, color: "text-white" },
-  { name: "GraphQL", icon: GitBranch, color: "text-white" },
-  { name: "Tailwind CSS", icon: Palette, color: "text-white" },
-  { name: "Redis", icon: Cpu, color: "text-white" },
-  { name: "AWS", icon: Cloud, color: "text-white" },
-  { name: "Express.js", icon: Server, color: "text-white" },
-  { name: "Figma", icon: Palette, color: "text-white" },
-  { name: "PostgreSQL", icon: Database, color: "text-white" },
-  { name: "Socket.io", icon: Zap, color: "text-white" },
-  { name: "Chakra UI", icon: Component, color: "text-white" },
-  { name: "Cloudinary", icon: ImageIcon, color: "text-white" },
-  { name: "Zegocloud", icon: Video, color: "text-white" },
-  { name: "Framer Motion", icon: Workflow, color: "text-white" },
-  { name: "Shadcn UI", icon: Component, color: "text-white" },
+const skillCategories = [
+  {
+    category: "Frontend",
+    skills: [
+      { name: "React", icon: Code2 },
+      { name: "Next.js", icon: Globe },
+      { name: "TypeScript", icon: FileText },
+      { name: "JavaScript", icon: Code2 },
+      { name: "React Native", icon: Smartphone },
+      { name: "Tailwind CSS", icon: Palette },
+      { name: "Chakra UI", icon: Component },
+      { name: "Shadcn UI", icon: Component },
+      { name: "Framer Motion", icon: Workflow },
+      { name: "GSAP", icon: Workflow },
+    ]
+  },
+  {
+    category: "Backend",
+    skills: [
+      { name: "Node.js", icon: Server },
+      { name: "Express.js", icon: Server },
+      { name: "GraphQL", icon: GitBranch },
+      { name: "Socket.io", icon: Zap },
+      { name: "PostMan-API", icon: Zap },
+      { name: "Bullmq", icon: Settings },
+    ]
+  },
+  {
+    category: "Database & Storage",
+    skills: [
+      { name: "MongoDB", icon: Database },
+      { name: "PostgreSQL", icon: Database },
+      { name: "Supabase", icon: Database },
+      { name: "NeonDB", icon: Database },
+      { name: "Redis", icon: Cpu },
+      { name: "Drizzle ORM", icon: Database },
+    ]
+  },
+  {
+    category: "Mobile & Tools",
+    skills: [
+      { name: "Expo", icon: Smartphone },
+      { name: "Docker", icon: Box },
+      { name: "AWS", icon: Cloud },
+      { name: "Figma", icon: Palette },
+      { name: "Clerk", icon: Shield },
+      { name: "Zustand", icon: Box },
+    ]
+  },
+  {
+    category: "Media & Services",
+    skills: [
+      { name: "Cloudinary", icon: ImageIcon },
+      { name: "Zegocloud", icon: Video },
+    ]
+  }
 ];
 
 export default function SkillsSection() {
   return (
     <>
-      {/* Skills container with your portfolio styling */}
-      <div className="hidden md:flex flex-col text-sm space-y-2 rounded max-w-2xl text-foreground/70 my-7">
-        <motion.div
-          className="flex flex-wrap gap-2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          {skills.map((skill, index) => (
-            <motion.div
-              key={skill.name}
-              className="group relative"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.4,
-                delay: index * 0.03,
-                type: "spring",
-                stiffness: 100,
-              }}
-              whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.2 },
-              }}
-            >
-              <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border-2 border-dashed border-neutral-600 bg-neutral-900/50 backdrop-blur-sm hover:border-neutral-500 hover:bg-neutral-800/80 transition-all duration-300">
-                <skill.icon
-                  className={`w-3.5 h-3.5 ${skill.color} group-hover:scale-110 transition-transform duration-200`}
-                />
-                <span className="text-xs font-medium text-neutral-300 whitespace-nowrap">
-                  {skill.name}
-                </span>
-              </div>
+      {/* Desktop version */}
+      <div className="hidden md:block max-w-4xl my-7">
+        {skillCategories.map((category, categoryIndex) => (
+          <motion.div
+            key={category.category}
+            className="mb-6 last:mb-0"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
+          >
+            <div className="flex flex-wrap items-center gap-2">
+              <h3 className="text-sm font-semibold text-foreground/80 dark:text-foreground/90 whitespace-nowrap">
+                {category.category}:
+              </h3>
+              {category.skills.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  className="group relative"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.4,
+                    delay: (categoryIndex * 0.1) + (index * 0.02),
+                    type: "spring",
+                    stiffness: 120,
+                  }}
+                  whileHover={{
+                    scale: 1.05,
+                    transition: { duration: 0.2 },
+                  }}
+                >
+                  <div className="flex items-center gap-1 px-2 py-1 rounded-full border border-dashed border-border/60 bg-background/50 dark:bg-background/30 backdrop-blur-sm hover:border-border hover:bg-background/80 dark:hover:bg-background/60 transition-all duration-300 shadow-sm">
+                    <skill.icon className="w-3 h-3 text-foreground/70 dark:text-foreground/80 group-hover:scale-110 transition-transform duration-200" />
+                    <span className="text-xs font-medium text-foreground/70 dark:text-foreground/80 whitespace-nowrap">
+                      {skill.name}
+                    </span>
+                  </div>
 
-              {/* Hover glow effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/10 to-neutral-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-lg" />
-            </motion.div>
-          ))}
-        </motion.div>
+                  {/* Hover glow effect */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-md" />
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
       </div>
 
-      {/* Mobile version (visible on small screens) */}
-      <div className="md:hidden">
-        <motion.div
-          className="flex flex-wrap gap-2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          {skills.map((skill, index) => (
-            <motion.div
-              key={skill.name}
-              className="group relative"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.4,
-                delay: index * 0.03,
-                type: "spring",
-                stiffness: 100,
-              }}
-              whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.2 },
-              }}
-            >
-              <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border-2 border-dashed border-neutral-600 bg-neutral-900/50 backdrop-blur-sm hover:border-neutral-500 hover:bg-neutral-800/80 transition-all duration-300">
-                <skill.icon
-                  className={`w-3.5 h-3.5 ${skill.color} group-hover:scale-110 transition-transform duration-200`}
-                />
-                <span className="text-xs font-medium text-neutral-300 whitespace-nowrap">
-                  {skill.name}
-                </span>
-              </div>
+      {/* Mobile version */}
+      <div className="md:hidden my-7">
+        {skillCategories.map((category, categoryIndex) => (
+          <motion.div
+            key={category.category}
+            className="mb-5 last:mb-0"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
+          >
+            <div className="flex flex-wrap items-center gap-1.5">
+              <h3 className="text-sm font-semibold text-foreground/80 dark:text-foreground/90 whitespace-nowrap">
+                {category.category}:
+              </h3>
+              {category.skills.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  className="group relative"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.4,
+                    delay: (categoryIndex * 0.1) + (index * 0.02),
+                    type: "spring",
+                    stiffness: 120,
+                  }}
+                  whileHover={{
+                    scale: 1.05,
+                    transition: { duration: 0.2 },
+                  }}
+                >
+                  <div className="flex items-center gap-1 px-1.5 py-0.5 rounded-full border border-dashed border-border/60 bg-background/50 dark:bg-background/30 backdrop-blur-sm hover:border-border hover:bg-background/80 dark:hover:bg-background/60 transition-all duration-300 shadow-sm">
+                    <skill.icon className="w-2.5 h-2.5 text-foreground/70 dark:text-foreground/80 group-hover:scale-110 transition-transform duration-200" />
+                    <span className="text-xs font-medium text-foreground/70 dark:text-foreground/80 whitespace-nowrap">
+                      {skill.name}
+                    </span>
+                  </div>
 
-              {/* Hover glow effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/10 to-neutral-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-lg" />
-            </motion.div>
-          ))}
-        </motion.div>
+                  {/* Hover glow effect */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-md" />
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
       </div>
     </>
   );

@@ -8,7 +8,6 @@ export const portfolioConfig: Portfolio = {
     github: "https://github.com/sehajmakkar",
     twitter: "https://x.com/sehajmakkarr",
     mail: "mailto:sehajmakkar007@gmail.com",
-    discord: "https://discordapp.com/users/",
     linkedin: "https://linkedin.com/in/sehajmakkar",
   }
 }
