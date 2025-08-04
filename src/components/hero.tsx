@@ -51,6 +51,7 @@ export default function Hero() {
       </p>
       <Socials />
       <div className="hidden md:flex flex-col text-sm space-y-2 rounded max-w-2xl text-foreground/70 my-7">
+        <h1 className="text-xl font-semibold font-heading">Skills:</h1>
         <SkillsSection />
       </div>
     </section>

@@ -1,133 +1,152 @@
 ---
-title: Sniper UI
-description: Skiper UI is a modern UI library for Next.js components that provides sleek, ready-to-use components. With over 25,000 user views in the last 30 days, it offers easy copy-paste implementation and is built on shadcn.
-tags: ['Next.js', 'UI Library', 'React.js', 'tailwind', 'shadcn']
-date: 2025-01-20
-image: './assets/skiperui/og.png'
-imageDark: './assets/skiperui/og.png'
+title: GenomicsAI
+description: GenomicsAI is an AI-driven genomic analysis platform that predicts the clinical impact of genetic mutations using the Evo 2 genomic language model.
+tags:
+  [
+    "Next.js",
+    "TypeScript",
+    "Python",
+    "FastAPI",
+    "Serverless",
+    "Machine Learning",
+    "BioInformatics",
+  ]
+date: 2025-08-04
+image: "./assets/genomicsai/gen1.png"
+imageDark: "./assets/genomicsai/gen1.png"
 links:
   [
-    { name: 'Website', url: 'https://skiper-ui.com/' },
-    { name: 'Twitter', url: 'https://twitter.com/guri_who' },
-    { name: 'Youtube', url: 'https://www.youtube.com/watch?v=YuINmZkAViU' },
-    { name: 'LinkedIn', url: 'https://skiper-ui.com/' },
+    { name: "Website", url: "https://genomics-ai.vercel.app/" },
+    { name: "GitHub", url: "https://github.com/sehajmakkar/GenomicsAI" },
   ]
 ---
 
-## What is Skiper UI?
+## Overview
+
+**GenomicsAI** is a full-stack AI-powered web platform for interpreting genetic mutations at scale. It leverages the **Evo 2 genomic language model**—a transformer-based model trained on over 9 trillion nucleotides—to accurately predict whether single nucleotide variants (SNVs) are likely to be pathogenic. The platform is engineered for clinicians, bioinformaticians, and researchers aiming to accelerate genetic variant classification in clinical and research pipelines.
 
 <br />
 <video
   muted
   autoPlay
   loop
-  className="w-full aspect-video"
-  poster="./assets/skiperui/og.png"
+  className="w-full rounded-lg border aspect-video"
+  poster="./assets/genomicsai/gen1.png"
 >
-  <source src="https://d2glbkh3xawr9t.cloudfront.net/skiper-ui.mov" />
+  <source src="./assets/genomicsai/genDemo.mp4" type="video/mp4" />
 </video>
 
-## Introduction
+---
 
-Skiper UI is a modern UI library for Next.js components that streamlines the development process. With over 25,000 user views in the last 30 days, it provides sleek, ready-to-use components that can be implemented with simple copy-paste functionality. Built on top of shadcn, Skiper UI offers a comprehensive collection of components that save development time while maintaining high-quality design standards.
+## Problem Context
 
-## Why Skiper UI?
+In clinical genomics, interpreting the functional impact of genetic mutations—especially **single nucleotide variants (SNVs)**—remains a significant bottleneck. Current challenges include:
 
-I was bored seeing every website look the same with shadcn. We needed a change! So I built one because I thought it was a cool thing to do.
+- **Variants of Uncertain Significance (VUS):** A substantial percentage of detected variants cannot be classified as benign or pathogenic due to lack of data.
+- **Latency in Clinical Validation:** Confirming the pathogenicity of variants typically requires longitudinal clinical studies, functional assays, or case-control analyses—processes that are expensive and time-intensive.
+- **Manual Curation Limitations:** Relying solely on databases such as ClinVar or literature searches often yields incomplete or outdated interpretations.
+- **Scaling Interpretation Pipelines:** Most labs lack scalable, real-time computational tools to support genome-wide variant analysis.
 
-The amazing response? I love the dev community so much - can't believe the amount of love it's received!
+---
 
-## Some Components
+## Solution
 
-<br />
-<div className="flex flex-wrap gap-5 justify-center w-full">
-  <img width="45%" className="rounded-xl mx-10 "  src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd256czVsd3RwZ2oxbWhoMWEwd2t2cTJ5ZDNxdnl6c3hxbGhsYzlzdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DzvYetUmFJUXhyluCT/giphy.gif" />
-  <img width="45%" className="rounded-xl mx-10 " src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDFwcDgxcWhxdjAzczV3dWNudGc2YTU1YzNiM2FpdnV1YnZqZDloOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oDHHJ53NWtYe9vMcIT/giphy.gif" />
-  <img width="45%" className="rounded-xl mx-10 " src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTl0OWNnZXRwejdoYjdkNndwdDVhdGM0eGMwNjFrYzM1c29xd2NmbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3cXAjB3X3dlKo0d7Oz/giphy.gif" />
-  <img width="45%" className="rounded-xl mx-10 " src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjEyMzFqMnQxbzQ5MGVwM3JhMTQwZXd0czIwM3d1d3JhdjI3MWZmciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uZN1bdJHqypk2ePdXz/giphy.gif" />
-  <img width="45%" className="rounded-xl mx-10 " src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHk4emQwOTNicDJsaHY2MnNscm95Mm9odnlpdzFqd2I1YTg1cHRtaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d1rbJs5a9KGlVZDIfo/giphy.gif" />
-  <img width="45%" className="rounded-xl mx-10 " src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXgzNTluYWowd2NjNjdwdjhkZGJsbHM5YXYyeW4wOTlheTVpNG85diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/okI33wZS9XGpEpvgTP/giphy.gif" />
-</div>
+GenomicsAI addresses these limitations by providing a **real-time, AI-powered platform** for predicting the pathogenicity of SNVs. Built on a serverless, GPU-accelerated architecture, it allows users to:
 
-## Features
+- Rapidly **input and analyze SNVs** using the Evo 2 model, which captures evolutionary and functional context.
+- **Compare predictions** against existing clinical evidence from authoritative sources like **ClinVar**.
+- Interact with reference gene sequences and genomic coordinates using data from the **UCSC Genome Browser API**.
+- Receive **confidence metrics** that quantify the likelihood of a prediction being correct, aiding downstream decision-making in clinical genomics workflows.
 
-1. Pre-built Components: Access a growing library of modern, responsive UI components designed specifically for Next.js projects.
+This platform shifts variant interpretation from slow, manual evaluation to high-throughput, AI-assisted triage—bridging the gap between raw genomic data and clinical insight.
 
-2. One-Command Installation: Add components to your project with a simple NPX command: `npx shadcn@latest add "http://skiper-ui.com/registry/<component-name>"`.
+---
 
-3. Seamless Integration: Components designed to work perfectly with Next.js and existing project structures.
+## Key Features
 
-4. Customizable Design: Easily modify components to match your brand identity and design requirements.
+1. **AI-Based Variant Pathogenicity Prediction**  
+   Submit SNVs (e.g., G → A at chr13:32972790) and receive Evo 2 model outputs classifying the variant as likely benign or pathogenic.
 
-5. Ready-to-Use Code: Copy-paste implementation that requires minimal configuration.
+2. **ClinVar Integration**  
+   Predictions are mapped against entries from the **NCBI ClinVar** database to show known clinical assertions for the queried variant.
 
-6. Component Consistency: Unified design language across all components for a cohesive user experience.
+3. **Gene Search and Genomic Navigation**  
+   Users can search by gene symbols (e.g., TP53, BRCA1) or browse genomic regions by coordinates. Reference sequences are rendered interactively using UCSC API data.
 
-7. Modern UI/UX:
-   - Responsive design for all devices
-   - Dark/Light theme support
-   - Accessible components
-   - Intuitive animations
+4. **Interactive Sequence Viewer**  
+   Visualize gene-level DNA sequences, zoom into specific positions, and annotate them with mutation details.
 
-## How to Use
+5. **Prediction Confidence Scores**  
+   Each AI prediction includes a numerical confidence score derived from Evo 2’s model logits, assisting in result prioritization.
 
-Built on top of the shadcn CLI so that users can trust it. Just one command and the component is all yours!
+6. **High-Performance, Serverless Backend**  
+   Inference is executed on H100 GPUs using **Modal**, allowing for fast, scalable, and cost-effective predictions.
 
-```bash
-npx shadcn@latest add "http://skiper-ui.com/registry/<component-name>"
-```
+7. **Fully Responsive UI**  
+   Built with **Next.js 15**, **TypeScript**, and **Shadcn UI**, the interface is optimized for both research-grade usability and mobile responsiveness.
 
-Get started now: [Skiper UI](https://skiper-ui.com/)
+---
 
-#### User Workflow
+## Demonstration
 
-1. The user can install components with a single command.
-2. The user can copy and paste component code into their Next.js project.
-3. The user can customize components to match design requirements.
-4. The user can build responsive interfaces quickly.
-5. The user can browse the component library for inspiration.
-6. The user can combine multiple components to create complex layouts.
-7. The user can access documentation for implementation details.
+![Gene sequence visualization and mutation input](./assets/genomicsai/gen2.png)  
+_Figure 1: Interactive gene sequence viewer and variant input interface._
 
-## Numbers Don't Lie
+![AI prediction results compared with ClinVar data](./assets/genomicsai/gen3.png)  
+_Figure 2: Evo 2 model predictions contextualized alongside ClinVar database annotations._
 
-DAMMMMMM!!!!!!!!!!! Never thought I'd hit this much reach on my first-ever product! 🚀🔥
+---
 
-<br />
-<div className="flex flex-col justify-between w-full">
-  <img src="./assets/skiperui/num.png" />
-</div>
+## Technology Stack
 
-And the cherry on top? This is just from Feb 2 to Feb 27! 🚀🔥 Launched on Jan 23, and even the first week was LITTTTT! 🔥🔥
+- **AI Model**: Evo 2 (Stanford, UCSF, Berkeley, NVIDIA)
+- **Frontend**: Next.js 15, React, TypeScript, Tailwind CSS, Shadcn UI
+- **Backend**: Python, FastAPI, serverless runtime on Modal (H100 GPU)
+- **Data Sources**: UCSC Genome Browser, NCBI E-utilities, ClinVar
 
-Gotta pay Vercel to see last month's stats—not happening for now! 😅😂
+---
 
-Skiper UI is designed with developers in mind, offering a transparent and efficient way to build modern interfaces. Our components are meticulously crafted to provide the perfect balance between functionality and aesthetics.
+## The Evo 2 Model
 
-## Show Some Support
+At the core of GenomicsAI is **Evo 2**, a transformer-based genomic language model purpose-built for modeling DNA sequences and predicting mutational impacts.
 
-Love Skiper UI? Support us on Product Hunt!
+- **Training Corpus**: 9.3 trillion nucleotides across 128,000 species
+- **Architectural Foundation**: Transformer blocks with tokenization tailored for genomic alphabets
+- **Capabilities**: Mutation impact prediction, de novo genome sequence generation, and in silico genome design
+- **Research Origin**: Developed by Stanford University, UC Berkeley, UCSF, and NVIDIA ([View Paper](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1.full.pdf))
 
-{' '}
+---
 
-<a
-  href="https://www.producthunt.com/posts/skiper-ui?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-skiper&#0045;ui"
-  target="_blank"
->
-  <img
-    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=806890&theme=light&t=1737565356562"
-    alt="skiper&#0047;ui - Components&#0032;crafted&#0032;for&#0032;modern&#0032;websites | Product Hunt"
-    className="w-[180px] h-[54px] "
-  />
-</a>
+## Use Cases
 
-## Get Involved
+- **Clinical Diagnostics**  
+  Rapidly assess whether patient-specific variants are potentially disease-causing, enabling faster turnaround times in molecular diagnostics.
 
-We welcome contributions from the community to further enhance the Skiper UI ecosystem. Whether you're a developer, designer, or an enthusiast, there are numerous ways to get involved. Visit our GitHub repository (coming soon) to explore the codebase, submit issues, or contribute to the project.
+- **Biomedical Research**  
+  Triage novel variants in gene discovery and functional genomics pipelines without requiring wet-lab validation at every step.
 
-## Stay Connected
+- **Variant Curation Support**  
+  Assist clinical geneticists in prioritizing variants for manual review or classification using automated, reproducible scoring.
 
-Stay up-to-date with the latest developments, announcements, and updates from the Skiper UI team by following us on social media:
+- **Education and Training**  
+  Serve as an educational tool for medical students or bioinformatics trainees to explore variant analysis workflows interactively.
 
-- Twitter: [@guri_who](https://twitter.com/guri_who)
-- YouTube: [Watch our introduction video](https://www.youtube.com/watch?v=YuINmZkAViU)
+---
+
+## Contribution
+
+GenomicsAI is an open-source initiative built to advance genomic research and AI-assisted variant interpretation. Contributions are welcomed across all areas—frontend, backend, model integration, UI design, and data pipeline improvements.
+
+Explore the repository: [GitHub – sehajmakkar/GenomicsAI](https://github.com/sehajmakkar/GenomicsAI)
+
+---
+
+## Contact
+
+- **GitHub**: [sehajmakkar](https://github.com/sehajmakkar)
+- **Email**: [sehajmakkar007@gmail.com](mailto:sehajmakkar007@gmail.com)
+- **X/Twitter**: [@sehajmakkarr](https://x.com/sehajmakkarr)
+
+---
+
+_GenomicsAI is purpose-built to reduce interpretation latency in genomics workflows through the integration of scalable infrastructure and cutting-edge AI._
