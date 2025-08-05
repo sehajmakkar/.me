@@ -18,7 +18,7 @@ export const navbarConfig: NavItem[] = [
     url: "/blogs",
   },
   {
-    title: "Designs",
+    title: "Components",
     url: "/designs",
   },
 ];

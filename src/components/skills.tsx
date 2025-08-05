@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Code2,
   Database,
@@ -16,8 +17,6 @@ import {
   Box,
   Cpu,
   Shield,
-  ImageIcon,
-  Video,
   Workflow,
   Component,
 } from "lucide-react";
@@ -26,52 +25,83 @@ const skillCategories = [
   {
     category: "Frontend",
     skills: [
-      { name: "React", icon: Code2 },
-      { name: "Next.js", icon: Globe },
-      { name: "TypeScript", icon: FileText },
-      { name: "JavaScript", icon: Code2 },
-      { name: "React Native", icon: Smartphone },
-      { name: "Tailwind CSS", icon: Palette },
-      { name: "Chakra UI", icon: Component },
-      { name: "Shadcn UI", icon: Component },
-      { name: "Framer Motion", icon: Workflow },
-      { name: "GSAP", icon: Workflow },
-    ]
+      { name: "React", icon: "/svgs/React.svg" },
+      { name: "Next.js", icon: "/svgs/Next.js.svg" },
+      { name: "TypeScript", icon: "/svgs/TypeScript.svg" },
+      { name: "JavaScript", icon: "/svgs/JavaScript.svg" },
+      { name: "React Native", icon: "/svgs/React.svg" },
+      { name: "Tailwind CSS", icon: "/svgs/TailwindCSS.svg" },
+      { name: "Shadcn UI", icon: Palette },
+      { name: "Framer Motion", icon: "/svgs/framer-motion.svg" },
+    ],
   },
   {
     category: "Backend",
     skills: [
-      { name: "Node.js", icon: Server },
-      { name: "Express.js", icon: Server },
-      { name: "GraphQL", icon: GitBranch },
-      { name: "Socket.io", icon: Zap },
-      { name: "PostMan-API", icon: Zap },
-      { name: "Bullmq", icon: Settings },
-    ]
+      { name: "Node.js", icon: "/svgs/Node.js.svg" },
+      { name: "Express.js", icon: "/svgs/Express.svg" },
+      { name: "Socket.io", icon: "/svgs/Socket.io.svg" },
+      { name: "PostMan-API", icon: "/svgs/Postman.svg" },
+    ],
   },
   {
     category: "Database & Storage",
     skills: [
-      { name: "MongoDB", icon: Database },
-      { name: "PostgreSQL", icon: Database },
-      { name: "Supabase", icon: Database },
-      { name: "NeonDB", icon: Database },
-      { name: "Redis", icon: Cpu },
+      { name: "MongoDB", icon: "/svgs/MongoDB.svg" },
+      { name: "PostgreSQL", icon: "/svgs/PostgresSQL.svg" },
+      { name: "MySQL", icon: "/svgs/MySQL.svg" },
+      { name: "NeonDB", icon: "/svgs/neon.jpeg" },
+      { name: "Redis", icon: "/svgs/Redis.svg" },
       { name: "Drizzle ORM", icon: Database },
-    ]
+    ],
   },
   {
     category: "Mobile & Tools",
     skills: [
-      { name: "Expo", icon: Smartphone },
-      { name: "Docker", icon: Box },
-      { name: "AWS", icon: Cloud },
+      { name: "Expo", icon: "/svgs/Expo.svg" },
+      { name: "Docker", icon: "/svgs/Docker.svg" },
+      { name: "AWS", icon: "/svgs/AWS.svg" },
       { name: "Figma", icon: Palette },
-      { name: "Clerk", icon: Shield },
-      { name: "Zustand", icon: Box },
-    ]
+      { name: "Clerk", icon: "/svgs/clerk.svg" },
+    ],
   },
 ];
+
+const SkillIcon = ({ icon, name }: { icon: any; name: string }) => {
+  if (typeof icon === "string") {
+    return (
+      <Image
+        src={icon}
+        alt={`${name} icon`}
+        width={12}
+        height={12}
+        className="group-hover:scale-110 transition-transform duration-200"
+      />
+    );
+  }
+  const IconComponent = icon;
+  return (
+    <IconComponent className="w-4 h-4 text-foreground/70 dark:text-foreground/80 group-hover:scale-110 transition-transform duration-200" />
+  );
+};
+
+const MobileSkillIcon = ({ icon, name }: { icon: any; name: string }) => {
+  if (typeof icon === "string") {
+    return (
+      <Image
+        src={icon}
+        alt={`${name} icon`}
+        width={10}
+        height={10}
+        className="group-hover:scale-110 transition-transform duration-200"
+      />
+    );
+  }
+  const IconComponent = icon;
+  return (
+    <IconComponent className="w-2.5 h-2.5 text-foreground/70 dark:text-foreground/80 group-hover:scale-110 transition-transform duration-200" />
+  );
+};
 
 export default function SkillsSection() {
   return (
@@ -98,7 +128,7 @@ export default function SkillsSection() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
                     duration: 0.4,
-                    delay: (categoryIndex * 0.1) + (index * 0.02),
+                    delay: categoryIndex * 0.1 + index * 0.02,
                     type: "spring",
                     stiffness: 120,
                   }}
@@ -108,7 +138,7 @@ export default function SkillsSection() {
                   }}
                 >
                   <div className="flex items-center gap-1 px-2 py-1 rounded-full border border-dashed border-border/60 bg-background/50 dark:bg-background/30 backdrop-blur-sm hover:border-border hover:bg-background/80 dark:hover:bg-background/60 transition-all duration-300 shadow-sm">
-                    <skill.icon className="w-3 h-3 text-foreground/70 dark:text-foreground/80 group-hover:scale-110 transition-transform duration-200" />
+                    <SkillIcon icon={skill.icon} name={skill.name} />
                     <span className="text-xs font-medium text-foreground/70 dark:text-foreground/80 whitespace-nowrap">
                       {skill.name}
                     </span>
@@ -145,7 +175,7 @@ export default function SkillsSection() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
                     duration: 0.4,
-                    delay: (categoryIndex * 0.1) + (index * 0.02),
+                    delay: categoryIndex * 0.1 + index * 0.02,
                     type: "spring",
                     stiffness: 120,
                   }}
@@ -155,7 +185,7 @@ export default function SkillsSection() {
                   }}
                 >
                   <div className="flex items-center gap-1 px-1.5 py-0.5 rounded-full border border-dashed border-border/60 bg-background/50 dark:bg-background/30 backdrop-blur-sm hover:border-border hover:bg-background/80 dark:hover:bg-background/60 transition-all duration-300 shadow-sm">
-                    <skill.icon className="w-2.5 h-2.5 text-foreground/70 dark:text-foreground/80 group-hover:scale-110 transition-transform duration-200" />
+                    <MobileSkillIcon icon={skill.icon} name={skill.name} />
                     <span className="text-xs font-medium text-foreground/70 dark:text-foreground/80 whitespace-nowrap">
                       {skill.name}
                     </span>
