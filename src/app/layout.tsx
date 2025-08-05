@@ -9,6 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { ColorThemeProvider } from "@/components/theme/hybrid-theme-context";
 
 const fontHeading = localFont({
   src: "../../assets/fonts/CalSans-SemiBold.woff2",
@@ -51,7 +52,6 @@ export const metadata: Metadata = {
     locale: "en_US",
   },
 
-
   twitter: {
     card: "summary_large_image",
     site: siteConfig.creator.url,
@@ -82,8 +82,15 @@ export default function RootLayout({
       >
         <Analytics />
         <SpeedInsights />
-        <ThemeProvider attribute="class" defaultTheme="light">
-          {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ColorThemeProvider>
+            {children}
+          </ColorThemeProvider>
         </ThemeProvider>
       </body>
     </html>

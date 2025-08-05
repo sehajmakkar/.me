@@ -82,9 +82,11 @@
     @apply bg-background text-foreground font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
     height: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
+/* Enhanced scrollbar styling with theme support */
 *::-webkit-scrollbar {
   width: 0.2rem;
 }
@@ -111,37 +113,64 @@
 
 ::-moz-selection {
   color: hsl(var(--background));
-  background: hsl(var(--foreground));
+  background: hsl(var(--primary));
 }
 
 ::selection {
   color: hsl(var(--background));
-  background: hsl(var(--foreground));
+  background: hsl(var(--primary));
 }
 
-/* Tailwind style */
+/* Enhanced Tailwind utility classes with theme support */
 .head-text {
   @apply text-4xl font-extrabold font-heading leading-[1.15] md:text-6xl sm:text-7xl;
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)) 60%, hsl(var(--accent-foreground)));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .head-text-md {
   @apply text-3xl font-extrabold font-heading leading-[1.15] sm:text-5xl;
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)) 60%, hsl(var(--accent-foreground)));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .head-text-sm {
   @apply text-2xl font-extrabold font-heading leading-[1.15] sm:text-4xl;
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)) 60%, hsl(var(--accent-foreground)));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .social-link {
-  @apply w-8 h-8 rounded border active:border-b active:scale-[0.97] hover:border-[0.2px] hover:border-b-4 hover:border-primary/30 transition-all duration-100 ease-in-out flex justify-center items-center;
+  @apply w-8 h-8 rounded border active:border-b active:scale-[0.97] hover:border-[0.2px] hover:border-b-4 transition-all duration-100 ease-in-out flex justify-center items-center;
+  border-color: hsl(var(--border));
+  transition: all 0.1s ease-in-out, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.social-link:hover {
+  border-color: hsl(var(--primary) / 0.3);
+  background-color: hsl(var(--accent));
 }
 
 .pebble {
-  @apply border border-transparent active:border-b active:scale-[0.97] hover:border-b-4 hover:border-primary/30 transition-all transform-gpu duration-100 ease-in-out;
+  @apply border border-transparent active:border-b active:scale-[0.97] transition-all transform-gpu duration-100 ease-in-out;
+  transition: all 0.1s ease-in-out, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.pebble:hover {
+  border-color: hsl(var(--primary) / 0.3);
+  border-bottom-width: 4px;
+  background-color: hsl(var(--accent));
 }
 
 .nav-item {
   box-shadow: 0px -3px 2px var(--nav-item-shadow) inset;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .current {
@@ -152,9 +181,10 @@
 .nav-container {
   box-shadow: 1px 5px 5px var(--nav-container-shadow),
     -1px 5px 5px var(--nav-container-shadow);
+  transition: box-shadow 0.3s ease;
 }
 
-/* view transition api */
+/* Enhanced view transition api with theme support */
 .page-transition {
   opacity: 0;
   transition: opacity 0.7s ease;
@@ -200,4 +230,46 @@
       mask-size: 350vmax;
     }
   }
+}
+
+/* Theme-aware component enhancements */
+.theme-aware-button {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)) 80%, hsl(var(--accent-foreground)));
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-aware-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, hsl(var(--background) / 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.theme-aware-button:hover::before {
+  left: 100%;
+}
+
+.theme-aware-card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  transition: all 0.3s ease;
+}
+
+.theme-aware-card:hover {
+  border-color: hsl(var(--primary) / 0.3);
+  box-shadow: 0 10px 25px hsl(var(--primary) / 0.1);
+  transform: translateY(-2px);
+}
+
+/* Smooth transitions for all theme changes */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }

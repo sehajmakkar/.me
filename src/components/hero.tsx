@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Palette } from "lucide-react";
 import { siteConfig } from "@/config/site.config";
 import { portfolioConfig } from "@/config/portfolio.config";
 import { Socials } from "@/components/socials";
 import Link from "next/link";
-import ThemeToggler from "@/components/theme/theme-toggler";
+import ThemeToggler from "@/components/theme/theme-toggler"; // Your existing theme toggler
 import SkillsSection from "./skills";
+import { ThemeCustomizer } from "@/components/theme/hybrid-theme-customizer";
 
 // Array of taglines to cycle through
 const taglines = [
@@ -19,6 +21,7 @@ const taglines = [
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
+  const [isCustomizerOpen, setIsCustomizerOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,6 +30,7 @@ export default function Hero() {
 
     return () => clearInterval(interval);
   }, []); 
+
   return (
     <section className="w-full flex flex-col lg:min-h-[calc(100vh-7rem)]">
       <Link href="/">
@@ -35,13 +39,15 @@ export default function Hero() {
       <div className="flex justify-between items-center mt-6">
         <h1 className="head-text-sm">{portfolioConfig.name}</h1>
         <div className="flex items-center gap-2">
-          {/* <Button size="icon" variant="ghost" className="rounded-full" asChild>
-            <Link href="#">
-              <Rss size={18} />
-              <span className="sr-only">rss feed</span>
-            </Link>
-          </Button> */}
-          <ThemeToggler />
+          <button
+            onClick={() => setIsCustomizerOpen(true)}
+            className="p-2 hover:bg-accent rounded-md transition-colors border border-border"
+            title="Customize theme"
+          >
+            <Palette className="w-4 h-4" />
+            <span className="sr-only">customize theme</span>
+          </button>
+          <ThemeToggler /> {/* Your existing theme toggler that works with next-themes */}
         </div>
       </div>
 
@@ -51,19 +57,16 @@ export default function Hero() {
         ✦&nbsp;
         <AnimatePresence mode="wait">
           <motion.span
-            // The key is crucial for AnimatePresence to track the element
             key={taglines[index]}
-            initial={{ y: -10, opacity: 0 }} // Start above and invisible
-            animate={{ y: 0, opacity: 1 }}     // Animate to original position and visible
-            exit={{ y: 10, opacity: 0 }}      // Exit by going down and invisible
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 10, opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             {taglines[index]}
           </motion.span>
         </AnimatePresence>
-        {/* &nbsp;✦ */}
       </h3>
-      {/* --- END OF ANIMATED TAGLINE SECTION --- */}
 
       <p className="my-5 max-w-2xl text-foreground/80">
         Hi👋🏻 I&apos;m Sehaj, A full stack + AI guy with experience in building{" "}
@@ -77,6 +80,12 @@ export default function Hero() {
       <div className="hidden md:flex flex-col text-sm space-y-2 rounded max-w-2xl text-foreground/70 ">
         <SkillsSection />
       </div>
+
+      {/* Theme Customizer Modal */}
+      <ThemeCustomizer 
+        isOpen={isCustomizerOpen} 
+        onClose={() => setIsCustomizerOpen(false)} 
+      />
     </section>
   );
 }
