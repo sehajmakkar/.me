@@ -14,10 +14,9 @@ export const experiencesConfig: Experience[] = [
     start: "June 2025",
     end: "Present",
     description: [
-      "Developed custom web applications and e-commerce solutions for multiple clients",
-      "Built responsive websites using React, Next.js and modern frontend technologies",
-      "Provided technical consulting and solutions architecture for small businesses",
-      "Tech: React, Next.js, TypeScript, Node.js, MongoDB, Tailwind , Framer Motion, AWS"
+      "Worked on Internal company's dashboard, fixed 5+ bugs and optimized performance by 15%.",
+      "Developing Solar Design Software using NextJS and ThreeJS for 3D visualization.",
+      "Tech: React, Next.js, TypeScript, Three.js, React Three Fiber, MongoDB, Tailwind CSS, Framer Motion"
     ],
   },
   {
@@ -33,10 +32,10 @@ export const experiencesConfig: Experience[] = [
     start: "Jan 2025",
     end: "Feb 2025",
     description: [
-      "Engineered API for Apple Maps data translation & validation using Node.js/Express/MySQL",
-      "Built data visualization tool with React/AWS for digitization analysis",
-      "Led NextJS POC initiatives demonstrating scalable solutions",
-      "Tech: NodeJS, Express, MySQL, NextJS, TypeScript, React, Tailwind, AWS"
+      "Developed a 3D car interface using React Fiber and Three.js for interactive UI.",
+      "Engineered Drizzy.in's frontend with React.js, Tailwind CSS, and responsive design principles.",
+      "Integrated Meta Pixel with custom event tracking for conversion analytics and ad optimization.",
+      "Tech: React.js, Three.js, Javascript, Tailwind CSS, Meta Pixel."
     ],
   },
   
