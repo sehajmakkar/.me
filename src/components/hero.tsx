@@ -46,22 +46,22 @@ export default function Hero() {
       </div>
 
       {/* --- ANIMATED TAGLINE SECTION --- */}
-      <h3 className="mt-2 text-lg flex items-center justify-start text-center h-8">
+      <h3 className="mt-2 text-lg flex items-center justify-start text-center h-6">
         <span className="sr-only">tagline</span>
         ✦&nbsp;
         <AnimatePresence mode="wait">
           <motion.span
             // The key is crucial for AnimatePresence to track the element
             key={taglines[index]}
-            initial={{ y: -20, opacity: 0 }} // Start above and invisible
+            initial={{ y: -10, opacity: 0 }} // Start above and invisible
             animate={{ y: 0, opacity: 1 }}     // Animate to original position and visible
-            exit={{ y: 20, opacity: 0 }}      // Exit by going down and invisible
+            exit={{ y: 10, opacity: 0 }}      // Exit by going down and invisible
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             {taglines[index]}
           </motion.span>
         </AnimatePresence>
-        &nbsp;✦
+        {/* &nbsp;✦ */}
       </h3>
       {/* --- END OF ANIMATED TAGLINE SECTION --- */}
 

@@ -71,13 +71,6 @@ const skillCategories = [
       { name: "Zustand", icon: Box },
     ]
   },
-  {
-    category: "Media & Services",
-    skills: [
-      { name: "Cloudinary", icon: ImageIcon },
-      { name: "Zegocloud", icon: Video },
-    ]
-  }
 ];
 
 export default function SkillsSection() {

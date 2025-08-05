@@ -5,7 +5,7 @@ export const experiencesConfig: Experience[] = [
     title: "Application Developer",
     employmentType: "Internship",
     company: {
-      name: "Reslink Technologies",
+      name: "Reslink",
       url: "https://www.reslink.org/",
     },
     location: {
@@ -24,14 +24,14 @@ export const experiencesConfig: Experience[] = [
     title: "Frontend Developer",
     employmentType: "Internship",
     company: {
-      name: "Drizzy GoSafe Technologies",
+      name: "Drizzy",
       url: "https://drizzy.in/",
     },
     location: {
       name: "Remote",
     },
-    start: "February 2025",
-    end: "January 2025",
+    start: "Jan 2025",
+    end: "Feb 2025",
     description: [
       "Engineered API for Apple Maps data translation & validation using Node.js/Express/MySQL",
       "Built data visualization tool with React/AWS for digitization analysis",
