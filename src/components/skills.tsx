@@ -2,24 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {
-  Code2,
-  Database,
-  Server,
-  Smartphone,
-  Globe,
-  Palette,
-  Cloud,
-  Zap,
-  FileText,
-  Settings,
-  GitBranch,
-  Box,
-  Cpu,
-  Shield,
-  Workflow,
-  Component,
-} from "lucide-react";
+import { Database, Palette } from "lucide-react";
 
 const skillCategories = [
   {
@@ -31,7 +14,7 @@ const skillCategories = [
       { name: "JavaScript", icon: "/svgs/JavaScript.svg" },
       { name: "React Native", icon: "/svgs/React.svg" },
       { name: "Tailwind CSS", icon: "/svgs/TailwindCSS.svg" },
-      { name: "Shadcn UI", icon: Palette },
+      { name: "Shadcn UI", icon: "/svgs/shadcn.jpg" },
       { name: "Framer Motion", icon: "/svgs/framer-motion.svg" },
     ],
   },
@@ -49,10 +32,11 @@ const skillCategories = [
     skills: [
       { name: "MongoDB", icon: "/svgs/MongoDB.svg" },
       { name: "PostgreSQL", icon: "/svgs/PostgresSQL.svg" },
+      { name: "Prisma ORM", icon: "/svgs/prisma.svg" },
       { name: "MySQL", icon: "/svgs/MySQL.svg" },
       { name: "NeonDB", icon: "/svgs/neon.jpeg" },
       { name: "Redis", icon: "/svgs/Redis.svg" },
-      { name: "Drizzle ORM", icon: Database },
+      { name: "Drizzle ORM", icon: "/svgs/drizzle.png" },
     ],
   },
   {
@@ -61,7 +45,7 @@ const skillCategories = [
       { name: "Expo", icon: "/svgs/Expo.svg" },
       { name: "Docker", icon: "/svgs/Docker.svg" },
       { name: "AWS", icon: "/svgs/AWS.svg" },
-      { name: "Figma", icon: Palette },
+      { name: "Figma", icon: "/svgs/figma.png" },
       { name: "Clerk", icon: "/svgs/clerk.svg" },
     ],
   },
@@ -73,8 +57,8 @@ const SkillIcon = ({ icon, name }: { icon: any; name: string }) => {
       <Image
         src={icon}
         alt={`${name} icon`}
-        width={12}
-        height={12}
+        width={14}
+        height={14}
         className="group-hover:scale-110 transition-transform duration-200"
       />
     );
@@ -91,8 +75,8 @@ const MobileSkillIcon = ({ icon, name }: { icon: any; name: string }) => {
       <Image
         src={icon}
         alt={`${name} icon`}
-        width={10}
-        height={10}
+        width={11}
+        height={11}
         className="group-hover:scale-110 transition-transform duration-200"
       />
     );
@@ -137,9 +121,9 @@ export default function SkillsSection() {
                     transition: { duration: 0.2 },
                   }}
                 >
-                  <div className="flex items-center gap-1 px-2 py-1 rounded-full border border-dashed border-border/60 bg-background/50 dark:bg-background/30 backdrop-blur-sm hover:border-border hover:bg-background/80 dark:hover:bg-background/60 transition-all duration-300 shadow-sm">
+                  <div className="flex items-center gap-1.5 px-2 py-1 rounded-full border border-dashed border-border/60 bg-background/50 dark:bg-background/30 backdrop-blur-sm hover:border-border hover:bg-background/80 dark:hover:bg-background/60 transition-all duration-300 shadow-sm">
                     <SkillIcon icon={skill.icon} name={skill.name} />
-                    <span className="text-xs font-medium text-foreground/70 dark:text-foreground/80 whitespace-nowrap">
+                    <span className="text-sm font-medium text-foreground/70 dark:text-foreground/80 whitespace-nowrap">
                       {skill.name}
                     </span>
                   </div>

@@ -201,3 +201,16 @@
     }
   }
 }
+
+::selection,
+::-moz-selection {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+
+/* Dark mode selection */
+html.dark ::selection,
+html.dark ::-moz-selection {
+  background: #FF1F57;
+  color: white;
+}

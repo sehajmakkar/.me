@@ -65,12 +65,11 @@ export default function Hero() {
       </h3>
       {/* --- END OF ANIMATED TAGLINE SECTION --- */}
 
-      <p className="my-5 max-w-2xl text-foreground/80">
-        Hi👋🏻 I&apos;m Sehaj, A full stack + AI guy with experience in building{" "}
-        <em>smooth</em> experiences for startups and enterprises ranging from{" "}
-        <strong>websites</strong>, <strong>applications</strong> and{" "}
-        <strong>AI Solutions</strong>. <br /> I Design - Code - Deploy
-        seamlessly. Let&apos;s have a chat! 👇🏻
+      <p className="my-5 max-w-2xl text-[#737373]">
+          Yup I&apos;m a <span className="text-foreground">Full Stack + AI Dev</span> with experience in building{" "}
+        <em>smooth</em> experiences for <span className="text-foreground">freelance clients</span>, <span className="text-foreground">startups</span> and <span className="text-foreground">enterprises</span> ranging from{" "}
+        <span className="text-foreground">websites</span>, <span className="text-foreground">applications</span> and{" "}
+        <span className="text-foreground">AI Solutions</span>. <br /> I Design • Code • Deploy. Let&apos;s have a chat! 👇🏻
         <span className="sr-only">bio</span>
       </p>
       <Socials />
