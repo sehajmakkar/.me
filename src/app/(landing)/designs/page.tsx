@@ -7,43 +7,33 @@ export default function Designs() {
     {
       id: 1,
       type: "video", // or "image"
-      src: "/designs/video1.mp4", // or image path
-      poster: "/designs/img1.png", // for videos
-      title: "UI Component Library",
+      src: "/demo/keyboard.mp4", // or image path
+      poster: "/demo/keyboard.png", // for videos
+      title: "3D Keyboard Component",
       link: {
-        type: "live", // "live" or "twitter"
-        url: "https://example.com",
+        type: "live", 
+        url: "https://keyboardui.vercel.app/",
       },
     },
     {
       id: 2,
       type: "video",
-      src: "/designs/video2.mp4",
-      poster: "/designs/img7.png",
-      title: "Dashboard Interface",
+      src: "/demo/loader.mp4",
+      poster: "/demo/loader.png",
+      title: "Logo Loaders and Animations",
       link: {
-        type: "twitter",
-        url: "https://twitter.com/example",
+        type: "live",
+        url: "https://aceanimations.vercel.app/",
       },
     },
     {
       id: 3,
       type: "image",
-      src: "/designs/img2.png",
-      title: "Mobile App Design",
+      src: "/demo/peacepetals.png",
+      title: "Hero  Section - Meditation App",
       link: {
         type: "live",
-        url: "https://example.com",
-      },
-    },
-    {
-      id: 4,
-      type: "image",
-      src: "/designs/img0.png",
-      title: "Landing Page",
-      link: {
-        type: "live",
-        url: "https://example.com",
+        url: "https://peacepetals.vercel.app/",
       },
     },
   ];
@@ -70,7 +60,7 @@ export default function Designs() {
         <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-gray-400 dark:border-gray-600 -translate-x-px translate-y-px" />
         <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-gray-400 dark:border-gray-600 translate-x-px translate-y-px" />
 
-        <div className="relative overflow-hidden rounded-lg">
+        <div className="relative overflow-hidden rounded-md">
           {design.type === "video" ? (
             <video
               width={900}
@@ -103,7 +93,7 @@ export default function Designs() {
               href={design.link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-black/80 dark:bg-white/90 text-white dark:text-black rounded-full text-xs font-medium backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-black dark:hover:bg-white"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-black/80 dark:bg-white/90 text-white dark:text-black rounded-lg text-xs font-bold backdrop-blur-sm transition-all duration-200 hover:scale-105 hover:bg-black dark:hover:bg-white"
             >
               {design.link.type === "live" ? (
                 <>

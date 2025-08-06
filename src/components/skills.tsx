@@ -40,8 +40,9 @@ const skillCategories = [
     ],
   },
   {
-    category: "Mobile & Tools",
+    category: "Tools",
     skills: [
+      { name: "Github", icon: "/svgs/githubb.svg" },
       { name: "Expo", icon: "/svgs/Expo.svg" },
       { name: "Docker", icon: "/svgs/Docker.svg" },
       { name: "AWS", icon: "/svgs/AWS.svg" },
