@@ -45,7 +45,7 @@ export const siteConfig: Site = {
     name: "Sehaj",
     url: "https://sehaj.works",
   },
-  ogImage: "https://sehaj.works/meta_thumb2.png",
+  ogImage: "https://sehaj.works/meta_thumbb.png",
   links: {
     x: "https://x.com/sehajmakkarr",
     github: "https://github.com/sehajmakkar",
