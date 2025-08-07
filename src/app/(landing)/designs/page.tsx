@@ -11,7 +11,7 @@ export default function Designs() {
       poster: "/demo/keyboard.png", // for videos
       title: "3D Keyboard Component",
       link: {
-        type: "live", 
+        type: "live",
         url: "https://keyboardui.vercel.app/",
       },
     },
@@ -28,6 +28,17 @@ export default function Designs() {
     },
     {
       id: 3,
+      type: "video",
+      src: "/demo/solar.mp4",
+      poster: "/demo/solar.png",
+      title: "Solar App - Component",
+      link: {
+        type: "live",
+        url: "",
+      },
+    },
+    {
+      id: 4,
       type: "image",
       src: "/demo/peacepetals.png",
       title: "Hero  Section - Meditation App",
