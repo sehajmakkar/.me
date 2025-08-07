@@ -84,7 +84,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     <main className="relative w-full lg:h-screen p-0 sm:p-5">
       <div className="w-full h-full rounded-2xl sm:border flex flex-wrap justify-between lg:divide-x">
         <div className="relative w-full lg:w-2/5 p-2 md:p-8">
-          <div className="flex justify-between mb-2">
+          <div className="flex justify-between mb-4">
             <Link href="/" className="group/back text-xs">
               <ArrowLeft
                 size={18}
@@ -92,9 +92,9 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               />
               <span className="sr-only">dev.gxuri.in</span>
             </Link>
-            <p className="px-2 py-1 text-xs rounded bg-secondary">
+            {/* <p className="px-2 py-1 text-xs rounded bg-secondary">
               {new Date(project.date).toDateString()}
-            </p>
+            </p> */}
           </div>
           <Picture
             image={project.image}

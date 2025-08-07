@@ -6,6 +6,7 @@ export const siteConfig: Site = {
   description: "Hi, I'm SEHAJ - Got ideas you are itching to bring to life? Let's collaborate and make it happen!",
   keywords: [
     "sehaj",
+    "sehaj preet",
     "sehaj makkar",
     "sehaj works",
     "sehaj makkar 02",

@@ -125,10 +125,10 @@ export default function Home() {
   }, [type, filteredProjects, loading]);
 
   return (
-    <section className="w-full space-y-6 mt-5">
+    <section className="w-full space-y-5 ">
       <Form {...form}>
         <form className="w-full flex items-center nav-container sticky top-14 z-20">
-          <FormField
+          {/* <FormField
             control={form.control}
             name="query"
             render={({ field }) => (
@@ -144,9 +144,9 @@ export default function Home() {
                 <FormMessage />
               </FormItem>
             )}
-          />
+          /> */}
           <div className="flex items-center">
-            <FormField
+            {/* <FormField
               control={form.control}
               name="type"
               render={({ field }) => (
@@ -182,7 +182,7 @@ export default function Home() {
                   <FormMessage />
                 </FormItem>
               )}
-            />
+            /> */}
             {type === "Github" && (
               <FormField
                 control={form.control}
