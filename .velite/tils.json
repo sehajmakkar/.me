@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "tils/01-01-2025",
+    "date": "2025-01-01T00:00:00.000Z",
+    "body": "const{jsx:e,jsxs:n}=arguments[0];function _createMdxContent(t){const r={a:\"a\",code:\"code\",li:\"li\",ul:\"ul\",...t.components};return n(r.ul,{children:[\"\\n\",n(r.li,{children:[\"Started Buildin \",e(r.a,{href:\"https://skiper-ui.com\",children:e(r.code,{children:\"skiper-ui.com\"})})]}),\"\\n\",n(r.li,{children:[\"Learned about \",e(r.code,{children:\"content layer\"}),\" for mdx files\"]}),\"\\n\"]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "01-01-2025"
+  },
+  {
+    "slug": "tils/02-01-2025",
+    "date": "2025-01-02T00:00:00.000Z",
+    "body": "const{jsx:e,jsxs:n}=arguments[0];function _createMdxContent(r){const o={a:\"a\",code:\"code\",li:\"li\",ul:\"ul\",...r.components};return n(o.ul,{children:[\"\\n\",n(o.li,{children:[\"Created 2 components for \",e(o.a,{href:\"https://skiper-ui.com\",children:e(o.code,{children:\"skiper-ui.com\"})})]}),\"\\n\",e(o.li,{children:\"Go through some ui/libraries openSources\"}),\"\\n\",n(o.li,{children:[\"Lesson 101 always read \",e(o.code,{children:\"contribution.md\"}),\" files\"]}),\"\\n\"]})}return{default:function(n={}){const{wrapper:r}=n.components||{};return r?e(r,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "02-01-2025"
+  },
+  {
+    "slug": "tils/03-01-2025",
+    "date": "2025-01-03T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(t){const r={a:\"a\",code:\"code\",li:\"li\",ul:\"ul\",...t.components};return e(r.ul,{children:[\"\\n\",n(r.li,{children:\"npx-unused - A tool to find unused npm packages in your project though it did't helped\"}),\"\\n\",e(r.li,{children:[\"made 2 components for \",n(r.a,{href:\"https://skiper-ui.com\",children:n(r.code,{children:\"skiper-ui.com\"})})]}),\"\\n\",n(r.li,{children:\"minimal cards\"}),\"\\n\",n(r.li,{children:\"vigentee blur\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "03-01-2025"
+  },
+  {
+    "slug": "tils/04-01-2025",
+    "date": "2025-01-04T00:00:00.000Z",
+    "body": "const{jsx:e,jsxs:n}=arguments[0];function _createMdxContent(r){const t={a:\"a\",code:\"code\",li:\"li\",ul:\"ul\",...r.components};return n(t.ul,{children:[\"\\n\",n(t.li,{children:[\"made another 3 components for \",e(t.a,{href:\"https://skiper-ui.com\",children:e(t.code,{children:\"skiper-ui.com\"})})]}),\"\\n\",e(t.li,{children:\"masked Div\"}),\"\\n\",e(t.li,{children:\"Animated Numbers\"}),\"\\n\",e(t.li,{children:\"expandable cards\"}),\"\\n\"]})}return{default:function(n={}){const{wrapper:r}=n.components||{};return r?e(r,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "04-01-2025"
+  },
+  {
+    "slug": "tils/05-01-2025",
+    "date": "2025-01-05T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(t){const r={a:\"a\",code:\"code\",li:\"li\",ul:\"ul\",...t.components};return e(r.ul,{children:[\"\\n\",e(r.li,{children:[\"made another 5 components for \",n(r.a,{href:\"https://skiper-ui.com\",children:n(r.code,{children:\"skiper-ui.com\"})})]}),\"\\n\",n(r.li,{children:\"spent 11+ hours working man what a day\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "05-01-2025"
+  },
+  {
+    "slug": "tils/06-01-2025",
+    "date": "2025-01-06T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(c){const r={a:\"a\",code:\"code\",li:\"li\",ul:\"ul\",...c.components};return e(r.ul,{children:[\"\\n\",e(r.li,{children:[\"made another 3 components for \",n(r.a,{href:\"https://skiper-ui.com\",children:n(r.code,{children:\"skiper-ui.com\"})})]}),\"\\n\",n(r.li,{children:\"brick by brick\"}),\"\\n\",n(r.li,{children:\"gona launch soon\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:c}=e.components||{};return c?n(c,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "06-01-2025"
+  },
+  {
+    "slug": "tils/07-01-2025",
+    "date": "2025-01-07T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(t){const o={li:\"li\",ul:\"ul\",...t.components};return e(o.ul,{children:[\"\\n\",n(o.li,{children:\"CLI on top of shadcn for components\"}),\"\\n\",n(o.li,{children:\"Learned about CLI and npm packages Cool stuff!\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "07-01-2025"
+  },
+  {
+    "slug": "tils/08-01-2025",
+    "date": "2025-01-08T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(t){const r={code:\"code\",li:\"li\",ul:\"ul\",...t.components};return e(r.ul,{children:[\"\\n\",n(r.li,{children:\"Learned about @ in nextjs and tsconfig paths\"}),\"\\n\",n(r.li,{children:\"Made Skiper more User enteric and Test components\"}),\"\\n\",e(r.li,{children:[\"Had a nice interview with \",n(r.code,{children:\"dardoc\"}),\" founders\"]}),\"\\n\"]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "08-01-2025"
+  },
+  {
+    "slug": "tils/09-01-2025",
+    "date": "2025-01-09T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(t){const o={li:\"li\",ul:\"ul\",...t.components};return e(o.ul,{children:[\"\\n\",n(o.li,{children:\"added cli docs to skiper/ui\"}),\"\\n\",n(o.li,{children:\"Found about some crypto companies william resolv\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "09-01-2025"
+  },
+  {
+    "slug": "tils/10-01-2025",
+    "date": "2025-01-10T00:00:00.000Z",
+    "body": "const{jsx:e,jsxs:n}=arguments[0];function _createMdxContent(t){const r={li:\"li\",ul:\"ul\",...t.components};return n(r.ul,{children:[\"\\n\",e(r.li,{children:\"prepare for web3 interview\"}),\"\\n\",e(r.li,{children:\"learned about presigned urls and how to solve bottle neck backend while image handeling\"}),\"\\n\"]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "10-01-2025"
+  },
+  {
+    "slug": "tils/11-01-2025",
+    "date": "2025-01-11T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(t){const o={li:\"li\",ul:\"ul\",...t.components};return e(o.ul,{children:[\"\\n\",n(o.li,{children:\"added CLI docs for skiper ui components on top of shadcn ui\"}),\"\\n\",n(o.li,{children:\"desinged and developed button component\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "11-01-2025"
+  },
+  {
+    "slug": "tils/12-01-2025",
+    "date": "2025-01-11T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(t){const o={code:\"code\",li:\"li\",ul:\"ul\",...t.components};return e(o.ul,{children:[\"\\n\",e(o.li,{children:[\"desinged and developed Wrap Button component for \",n(o.code,{children:\"Skiper-ui\"})]}),\"\\n\",n(o.li,{children:\"fixed home page and pricing tags also\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "12-01-2025"
+  },
+  {
+    "slug": "tils/13-01-2025",
+    "date": "2025-01-13T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(t){const o={code:\"code\",li:\"li\",ul:\"ul\",...t.components};return e(o.ul,{children:[\"\\n\",e(o.li,{children:[\"desinged and developed AI Input component for \",n(o.code,{children:\"Skiper-ui\"})]}),\"\\n\",n(o.li,{children:\"remove landing page bugs\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "13-01-2025"
+  },
+  {
+    "slug": "tils/14-01-2025",
+    "date": "2025-01-14T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(i){const t={code:\"code\",li:\"li\",ul:\"ul\",...i.components};return e(t.ul,{children:[\"\\n\",n(t.li,{children:\"did't had time was ill, relatives, family function\"}),\"\\n\",n(t.li,{children:\"damn it still continue the steak of github\"}),\"\\n\",e(t.li,{children:[\"popup component for \",n(t.code,{children:\"skiper-ui\"})]}),\"\\n\",n(t.li,{children:\"its kinda make sense if you can imagine you can build it like Litrally\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:i}=e.components||{};return i?n(i,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "14-01-2025"
+  },
+  {
+    "slug": "tils/15-01-2025",
+    "date": "2025-01-15T00:00:00.000Z",
+    "body": "const{jsx:e,jsxs:n}=arguments[0];function _createMdxContent(t){const c={code:\"code\",li:\"li\",ul:\"ul\",...t.components};return n(c.ul,{children:[\"\\n\",n(c.li,{children:[\"Added Newsletter page for \",e(c.code,{children:\"skiper-ui\"})]}),\"\\n\",n(c.li,{children:[\"Learned about \",e(c.code,{children:\"Notion\"}),\" sdk top store emails in notion pages (easy to access )\"]}),\"\\n\",n(c.li,{children:[e(c.code,{children:\"redis uptash\"}),\" cache db for fast read\"]}),\"\\n\",n(c.li,{children:[e(c.code,{children:\"resend.com\"}),\" to send mail with\"]}),\"\\n\"]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "15-01-2025"
+  },
+  {
+    "slug": "tils/16-01-2025",
+    "date": "2025-01-16T00:00:00.000Z",
+    "body": "const{jsx:e,jsxs:n}=arguments[0];function _createMdxContent(i){const l={a:\"a\",code:\"code\",li:\"li\",ul:\"ul\",...i.components};return n(l.ul,{children:[\"\\n\",n(l.li,{children:[\"Designed Welcome email for new users for \",e(l.a,{href:\"https://skiper-ui.com\",children:e(l.code,{children:\"skiper-ui.com\"})})]}),\"\\n\",e(l.li,{children:\"Learned about react-email components\"}),\"\\n\",e(l.li,{children:\"How we can use only inline css for emails , email avatars , responsive\"}),\"\\n\",e(l.li,{children:\"sending email is like html page with only inline css , no responsive css tags no tailwind plain html\"}),\"\\n\"]})}return{default:function(n={}){const{wrapper:i}=n.components||{};return i?e(i,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "16-01-2025"
+  },
+  {
+    "slug": "tils/17-01-2025",
+    "date": "2025-01-17T00:00:00.000Z",
+    "body": "const{jsx:e,jsxs:n}=arguments[0];function _createMdxContent(t){const r={a:\"a\",code:\"code\",li:\"li\",ul:\"ul\",...t.components};return n(r.ul,{children:[\"\\n\",e(r.li,{children:\"Learned new SEO terms and usecase LCP, LIP, sitemap,robots.tsx,JSON ld, google search console\"}),\"\\n\",e(r.li,{children:\"Web vitals chrome extension game changer for analyse page performance\"}),\"\\n\",n(r.li,{children:[\"Done with SEO for \",e(r.a,{href:\"https://skiper-ui.com\",children:e(r.code,{children:\"skiper-ui.com\"})}),\" sitemap,metadata,keywords,robots,lighthouse\"]}),\"\\n\"]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "17-01-2025"
+  },
+  {
+    "slug": "tils/18-01-2025",
+    "date": "2025-01-18T00:00:00.000Z",
+    "body": "const{jsx:t,jsxs:e}=arguments[0];function _createMdxContent(n){const o={li:\"li\",ul:\"ul\",...n.components};return e(o.ul,{children:[\"\\n\",t(o.li,{children:\"from 85% seo to 99% seo damn lilttle little fixes the sematics tags to color ratio, button names ,\"}),\"\\n\",t(o.li,{children:\"learend about sr-only for button for more seo freiendly\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:n}=e.components||{};return n?t(n,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "18-01-2025"
+  },
+  {
+    "slug": "tils/19-01-2025",
+    "date": "2025-01-19T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:e}=arguments[0];function _createMdxContent(t){const r={li:\"li\",ul:\"ul\",...t.components};return e(r.ul,{children:[\"\\n\",n(r.li,{children:\"introduced dark mode for skiper-ui website's landing page\"}),\"\\n\",n(r.li,{children:\"updated components for dark mode\"}),\"\\n\"]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "slugAsParams": "19-01-2025"
+  },
+  {
+    "slug": "tils/20-01-2025",
+    "date": "2025-01-20T00:00:00.000Z",
+    "body": "const{jsx:n,jsxs:t}=arguments[0];function _createMdxContent(e){const o={li:\"li\",ul:\"ul\",...e.components};return t(o.ul,{children:[\"\\n\",n(o.li,{children:\"created a coool af component for theme animation with view transition API\"}),\"\\n\",n(o.li,{children:\"was busy attented wedding but sill no days offf\"}),\"\\n\"]})}return{default:function(t={}){const{wrapper:e}=t.components||{};return e?n(e,{...t,children:n(_createMdxContent,{...t})}):_createMdxContent(t)}};",
+    "slugAsParams": "20-01-2025"
+  },
+  {
+    "slug": "tils/21-01-2025 ",
+    "date": "2025-01-21T00:00:00.000Z",
+    "body": "const{jsx:e,jsxs:n}=arguments[0];function _createMdxContent(t){const i={a:\"a\",code:\"code\",li:\"li\",ul:\"ul\",...t.components};return n(i.ul,{children:[\"\\n\",n(i.li,{children:[\"party hangover little done but still little fixes in documentations part for \",e(i.a,{href:\"https://skiper-ui.com\",children:e(i.code,{children:\"skiper-ui.com\"})})]}),\"\\n\",e(i.li,{children:\"a intro video for skiper-ui website\"}),\"\\n\",e(i.li,{children:\"Learned about ai commit message really helpful for useful commit messages\"}),\"\\n\"]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "21-01-2025 "
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "designs/design",
+    "title": "I modded the Buildspace OS",
+    "description": "A journey of me modding the buildspace os chrome extension to customize the look",
+    "date": "2024-06-20T00:00:00.000Z",
+    "published": true,
+    "tags": [
+      "buildspace",
+      "buildspace-os",
+      "chrome extension"
+    ],
+    "body": "const{Fragment:r,jsx:e,jsxs:n}=arguments[0];function _createMdxContent(s){return n(r,{children:[e(\"br\",{}),\"\\n\",e(\"img\",{src:\"/static/img0-381d65.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img1-75b613.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img2-e5b833.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img3-1d2e38.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img4-2b3246.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img5-abdefa.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img6-f6084b.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img7-c4f444.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img8-c3e44a.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img9-6579a8.png\",className:\"rounded-2xl my-2 border\"}),\"\\n\",e(\"img\",{src:\"/static/img10-7c9442.png\",className:\"rounded-2xl my-2 border\"})]})}return{default:function(r={}){const{wrapper:n}=r.components||{};return n?e(n,{...r,children:e(_createMdxContent,{...r})}):_createMdxContent()}};",
+    "image": {
+      "src": "/static/img1-75b613.png",
+      "height": 2013,
+      "width": 3240,
+      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAAAwAQCdASoIAAUADMDOJaQAA3AA/uq//mZta5nfwcIAAA==",
+      "blurWidth": 8,
+      "blurHeight": 5
+    },
+    "imageDark": {
+      "src": "/static/img1-75b613.png",
+      "height": 2013,
+      "width": 3240,
+      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAAAwAQCdASoIAAUADMDOJaQAA3AA/uq//mZta5nfwcIAAA==",
+      "blurWidth": 8,
+      "blurHeight": 5
+    },
+    "toc": [],
+    "author": "rds",
+    "slugAsParams": "design"
+  }
+]
