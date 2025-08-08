@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "velite && next dev",
-    "build": "velite && bun run rss:build && next build",
-    "rss:build": "bun run rss.ts",
+    "build": "velite && next build",
     "start": "velite && next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npm install --os=linux --cpu=x64 sharp"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.0",
@@ -37,11 +37,12 @@
     "react-dom": "^18",
     "react-hook-form": "^7.52.2",
     "remark": "^15.0.1",
+    "sharp": "^0.33.5",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "use-debounce": "^10.0.2",
-    "zod": "^3.23.8",
-    "velite": "^0.1.0-rc.3"
+    "velite": "^0.1.0-rc.3",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",
