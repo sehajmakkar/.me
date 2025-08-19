@@ -1,6 +1,6 @@
 ---
 title: CashFlowr
-description: Take control of your money with this cross-platform expense tracker built with React Native, Express.js, and PostgreSQL
+description: Take control of your money with this cross-platform expense tracker built with React Native, Express.js, and PostgreSQL. It provides a seamless experience across both iOS and Android devices.
 tags:
   [
     "React Native",
@@ -10,8 +10,8 @@ tags:
     "Expo",
   ]
 date: 2025-08-20
-image: "./assets/cashflowr/cas2.PNG"
-imageDark: "./assets/cashflowr/cas2.PNG"
+image: "./assets/cashflowr/cas4.PNG"
+imageDark: "./assets/cashflowr/cas4.PNG"
 links:
   [
     { name: "Youtube", url: "https://sehaj.works/cashflowr" },
@@ -33,16 +33,15 @@ Whether you're budgeting for the month, tracking daily expenses, or managing you
 <div style={{ textAlign: 'center', marginBottom: '20px' }}>
   <video 
     width="400" 
-    height="auto" 
-    controls 
+    height="600" 
+    muted
+    autoPlay
+    loop 
     style={{ borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
   >
     <source src="./assets/cashflowr/casDemo.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{ fontSize: '14px', color: '#666', marginTop: '8px', fontStyle: 'italic' }}>
-    CashFlowr in action - managing transactions and viewing balance overview
-  </p>
 </div>
 
 ---
@@ -51,39 +50,22 @@ Whether you're budgeting for the month, tracking daily expenses, or managing you
 
 ## User Interface
 
-<div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'center' }}>
-  <div style={{ textAlign: 'center' }}>
-    <img 
-      src="./assets/cashflowr/cas1.PNG" 
-      alt="Dashboard Overview" 
-      style={{ width: '300px', height: 'auto', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
-    />
-    <p style={{ fontSize: '14px', color: '#666', marginTop: '8px', fontStyle: 'italic' }}>
-      Main dashboard showing balance overview with income, expenses, and remaining balance
-    </p>
-  </div>
-  
-  <div style={{ textAlign: 'center' }}>
-    <img 
-      src="./assets/cashflowr/cas2.PNG" 
-      alt="Transaction Management" 
-      style={{ width: '300px', height: 'auto', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
-    />
-    <p style={{ fontSize: '14px', color: '#666', marginTop: '8px', fontStyle: 'italic' }}>
-      Add and manage transactions with categories and detailed information
-    </p>
-  </div>
-  
-  <div style={{ textAlign: 'center' }}>
-    <img 
-      src="./assets/cashflowr/cas3.PNG" 
-      alt="Transaction History" 
-      style={{ width: '300px', height: 'auto', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
-    />
-    <p style={{ fontSize: '14px', color: '#666', marginTop: '8px', fontStyle: 'italic' }}>
-      Complete transaction history with edit and delete functionality
-    </p>
-  </div>
+<div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+  <img 
+    src="./assets/cashflowr/cas1.PNG" 
+    alt="Dashboard Overview" 
+    style={{ width: '300px', height: '600px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', objectFit: 'cover' }}
+  />
+  <img 
+    src="./assets/cashflowr/cas2.PNG" 
+    alt="Transaction Management" 
+    style={{ width: '300px', height: '600px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', objectFit: 'cover' }}
+  />
+  <img 
+    src="./assets/cashflowr/cas3.PNG" 
+    alt="Transaction History" 
+    style={{ width: '300px', height: '600px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', objectFit: 'cover' }}
+  />
 </div>
 
 ---
