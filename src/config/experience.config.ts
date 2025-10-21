@@ -2,7 +2,22 @@ import type { Experience } from "@/types";
 
 export const experiencesConfig: Experience[] = [
   {
-    title: "Application Developer",
+    title: "Software Engineering Intern",
+    employmentType: "Internship",
+    company: {
+      name: "Perf",
+      url: "https://www.withperf.com/",
+    },
+    location: {
+      name: "Remote",
+    }, 
+    start: "Sept 2025",
+    end: "Present",
+    description: [
+    ],
+  },
+  {
+    title: "Software Engineering Intern",
     employmentType: "Internship",
     company: {
       name: "Reslink",
@@ -12,7 +27,7 @@ export const experiencesConfig: Experience[] = [
       name: "Hybrid",
     }, 
     start: "June 2025",
-    end: "Present",
+    end: "Sept 2025",
     description: [
       "Worked on Internal company's dashboard, fixed 5+ bugs and optimized performance by 15%.",
       "Developing Solar Design Software using NextJS and ThreeJS for 3D visualization.",

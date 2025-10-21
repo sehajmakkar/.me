@@ -72,6 +72,7 @@ const getCompanyLogo = (companyName: string): string => {
   const logoMap: Record<string, string> = {
     Reslink: "/logo/reslink-logo.jpg",
     Drizzy: "/logo/drizzy-logo.jpg",
+    Perf: "/logo/perf.png",
   };
 
   return logoMap[companyName];
